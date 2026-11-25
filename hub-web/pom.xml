@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.aihub</groupId><artifactId>ai-development-hub</artifactId><version>0.1.0-SNAPSHOT</version>
+  </parent>
+  <artifactId>hub-web</artifactId>
+  <name>hub-web</name>
+  <dependencies>
+    <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter</artifactId></dependency>
+    <dependency><groupId>org.projectlombok</groupId><artifactId>lombok</artifactId><optional>true</optional></dependency>
+    <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-test</artifactId><scope>test</scope></dependency>
+    <dependency><groupId>com.aihub</groupId><artifactId>hub-common</artifactId><version>${project.version}</version></dependency>
+    <dependency><groupId>com.aihub</groupId><artifactId>hub-security</artifactId><version>${project.version}</version></dependency>
+    <dependency><groupId>com.aihub</groupId><artifactId>hub-system</artifactId><version>${project.version}</version></dependency>
+    <dependency><groupId>com.aihub</groupId><artifactId>hub-agent</artifactId><version>${project.version}</version></dependency>
+    <dependency><groupId>com.aihub</groupId><artifactId>hub-task</artifactId><version>${project.version}</version></dependency>
+    <dependency><groupId>com.aihub</groupId><artifactId>hub-project</artifactId><version>${project.version}</version></dependency>
+    <dependency><groupId>com.aihub</groupId><artifactId>hub-channel</artifactId><version>${project.version}</version></dependency>
+    <dependency><groupId>com.aihub</groupId><artifactId>hub-memory</artifactId><version>${project.version}</version></dependency>
+    <dependency><groupId>com.aihub</groupId><artifactId>hub-monitor</artifactId><version>${project.version}</version></dependency>
+    <dependency><groupId>com.aihub</groupId><artifactId>hub-approval</artifactId><version>${project.version}</version></dependency>
+  </dependencies>
+</project>

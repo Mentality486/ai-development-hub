@@ -1,0 +1,30 @@
+spring:
+  profiles:
+    active: ${HUB_PROFILE:dev}
+  application:
+    name: ai-development-hub
+  jackson:
+    time-zone: Asia/Shanghai
+    date-format: yyyy-MM-dd HH:mm:ss
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
+
+server:
+  port: 18080
+  servlet:
+    context-path: /
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      id-type: auto
+
+logging:
+  level:
+    com.aihub: INFO
+    org.springframework.security: WARN
