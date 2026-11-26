@@ -30,7 +30,7 @@ public class SecurityConfig {
             .cors(cors -> cors.disable())
             .sessionManagement(s -> s.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
             .authorizeHttpRequests(auth -> auth
-                    .requestMatchers("/api/auth/login", "/actuator/**", "/error").permitAll()
+                    .requestMatchers("/api/auth/login", "/api/health", "/actuator/**", "/error").permitAll()
                     .anyRequest().authenticated())
             .exceptionHandling(ex -> ex
                     .authenticationEntryPoint((req, res, e) -> {
